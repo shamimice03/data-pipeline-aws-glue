@@ -1,0 +1,21 @@
+{
+    "event_id": "evt-0e1f2a3b",
+    "user": {
+        "id": "user_303",
+        "age": 29,
+        "location": "Washington"
+    },
+    "product_details": {
+        "product_id": "PROD-1111",
+        "category": "Home Goods"
+    },
+    "transaction": {
+        "amount": 85.00,
+        "currency": "USD",
+        "timestamp": "2023-11-23T10:11:33Z"
+    },
+    "feedback": {
+        "rating": 5,
+        "review_text": "Exactly what I was looking for! Excellent quality."
+    }
+}

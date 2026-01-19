@@ -1,0 +1,11 @@
+{
+    "event_id": "evt-3d4c5b6a",
+    "user_id": "user_202",
+    "user_age": 31,
+    "location": "Florida",
+    "product_id": "PROD-5555",
+    "product_category": "Apparel",
+    "purchase_amount": 45.50,
+    "currency": "USD",
+    "timestamp": "2023-11-22T19:50:21Z"
+}

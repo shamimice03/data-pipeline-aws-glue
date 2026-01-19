@@ -1,0 +1,19 @@
+{
+    "event_id": "evt-1f2e3d4c",
+    "user_id": "user_789",
+    "user_age": 45,
+    "location": "Texas",
+    "product_details": {
+        "product_id": "PROD-1111",
+        "category": "Home Goods"
+    },
+    "transaction": {
+        "amount": 89.00,
+        "currency": "USD",
+        "timestamp": "2023-11-20T16:22:30Z"
+    },
+    "feedback": {
+        "rating": 3,
+        "review_text": "It's okay. Does the job, but feels a bit flimsy."
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "event_id": "evt-7f8e9d0c",
+    "user": {
+        "id": "user_123",
+        "age": 28,
+        "location": "California"
+    },
+    "product_details": {
+        "product_id": "PROD-9876",
+        "category": "Electronics"
+    },
+    "transaction": {
+        "amount": 135.50,
+        "currency": "USD",
+        "timestamp": "2023-11-22T12:30:00Z"
+    },
+    "feedback": {
+        "rating": 4,
+        "review_text": "Great device, a little expensive but worth it."
+    }
+}

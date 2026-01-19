@@ -1,0 +1,19 @@
+{
+    "event_id": "evt-2a3b4c5d",
+    "user_id": "user_789",
+    "user_age": 45,
+    "location": "Texas",
+    "product_details": {
+        "product_id": "PROD-4444",
+        "category": "Apparel"
+    },
+    "transaction": {
+        "amount": 60.75,
+        "currency": "USD",
+        "timestamp": "2023-11-21T18:05:45Z"
+    },
+    "feedback": {
+        "rating": 2,
+        "review_text": "Poor fit. The material was also itchy. Returning it."
+    }
+}

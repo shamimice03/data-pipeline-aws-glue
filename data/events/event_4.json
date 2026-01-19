@@ -1,0 +1,17 @@
+{
+    "event_id": "evt-5b6a7b8c",
+    "user": {
+        "id": "user_456",
+        "age": 34,
+        "location": "New York"
+    },
+    "product_details": {
+        "product_id": "PROD-2222",
+        "category": "Books"
+    },
+    "transaction": {
+        "amount": 15.99,
+        "currency": "USD",
+        "timestamp": "2023-11-21T09:15:00Z"
+    }
+}

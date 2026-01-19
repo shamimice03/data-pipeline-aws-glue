@@ -1,0 +1,17 @@
+{
+    "event_id": "evt-9d8c7b6a",
+    "user": {
+        "id": "user_123",
+        "age": 28,
+        "location": "California"
+    },
+    "product_id": "PROD-5555",
+    "product_category": "Apparel",
+    "purchase_amount": 45.50,
+    "currency": "USD",
+    "timestamp": "2023-11-20T15:01:55Z",
+    "review": {
+        "rating": 4,
+        "review_text": "Good quality, but the color was a bit different than the picture."
+    }
+}

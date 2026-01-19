@@ -1,0 +1,17 @@
+{
+    "event_id": "evt-6b7a8c9d",
+    "user": {
+        "id": "user_456",
+        "age": 34,
+        "location": "New York"
+    },
+    "product_id": "PROD-7777",
+    "product_category": "Groceries",
+    "purchase_amount": 25.30,
+    "currency": "USD",
+    "timestamp": "2023-11-23T14:00:00Z",
+    "review": {
+        "rating": 3,
+        "review_text": "Average quality. You get what you pay for."
+    }
+}

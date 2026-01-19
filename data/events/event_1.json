@@ -1,0 +1,21 @@
+{
+    "event_id": "evt-8a1b2c3d",
+    "user": {
+        "id": "user_456",
+        "age": 35,
+        "location": "New York"
+    },
+    "product_details": {
+        "product_id": "PROD-9876",
+        "category": "Electronics"
+    },
+    "transaction": {
+        "amount": 129.99,
+        "currency": "USD",
+        "timestamp": "2023-11-20T14:32:10Z"
+    },
+    "feedback": {
+        "rating": 5,
+        "review_text": "Absolutely love it! Works perfectly."
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "event_id": "evt-9c8d7e6f",
+    "user": {
+        "id": "user_101",
+        "age": 22,
+        "location": "Chicago"
+    },
+    "product_id": "PROD-3333",
+    "product_category": "Electronics",
+    "purchase_amount": 250.00,
+    "currency": "USD",
+    "timestamp": "2023-11-21T11:45:12Z",
+    "review": {
+        "rating": 5,
+        "review_text": "Best purchase I've made all year! Highly recommend."
+    }
+}
