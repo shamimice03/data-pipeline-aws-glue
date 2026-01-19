@@ -47,7 +47,8 @@ resource "aws_iam_role_policy" "glue_s3_access" {
         ]
         Resource = [
           "arn:aws:s3:::cloudterms-events-data/*",
-          "arn:aws:s3:::cloudterms-events-data-outputs/*"
+          "arn:aws:s3:::cloudterms-events-data-outputs/*",
+          "arn:aws:s3:::cloudterms-glue-assets/*"
         ]
       },
     ]
