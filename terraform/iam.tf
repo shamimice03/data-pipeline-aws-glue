@@ -46,9 +46,9 @@ resource "aws_iam_role_policy" "glue_s3_access" {
           "s3:PutObject"
         ]
         Resource = [
-          "arn:aws:s3:::cloudterms-events-data/*",
-          "arn:aws:s3:::cloudterms-events-data-outputs/*",
-          "arn:aws:s3:::cloudterms-glue-assets/*"
+          "arn:aws:s3:::${local.raw_data_bucket}/*",
+          "arn:aws:s3:::${local.output_data_bucket}/*",
+          "arn:aws:s3:::${local.glue_asset_bucket}/*"
         ]
       },
     ]

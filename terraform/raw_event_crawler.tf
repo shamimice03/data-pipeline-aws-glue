@@ -10,7 +10,7 @@ resource "aws_glue_crawler" "raw_data_crawler" {
   role          = aws_iam_role.glue_crawler_role.arn
 
   s3_target {
-    path = "s3://cloudterms-events-data/events/"
+    path = "s3://${local.raw_data_bucket}/events/"
   }
 
   # Group all compatible schemas into a single table

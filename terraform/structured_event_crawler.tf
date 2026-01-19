@@ -10,7 +10,7 @@ resource "aws_glue_crawler" "structured_data_crawler" {
   role          = aws_iam_role.glue_crawler_role.arn
 
   s3_target {
-    path = "s3://cloudterms-events-data-outputs"
+    path = "s3://${local.output_data_bucket}"
   }
 
   # Crawl partitioned Parquet data

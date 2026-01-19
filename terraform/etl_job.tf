@@ -1,7 +1,3 @@
-locals {
-  glue_asset_bucket = "s3://cloudterms-glue-assets"
-}
-
 # ETL Job: Transform raw events to partitioned Parquet
 resource "aws_glue_job" "test_1_etl" {
   name     = "events-etl"
@@ -9,20 +5,20 @@ resource "aws_glue_job" "test_1_etl" {
 
   command {
     name            = "glueetl"
-    script_location = "${local.glue_asset_bucket}/scripts/events-etl.py"
+    script_location = "s3://${local.glue_asset_bucket}/scripts/events-etl.py"
     python_version  = "3"
   }
 
   default_arguments = {
     "--enable-metrics"               = "true"
     "--enable-spark-ui"              = "true"
-    "--spark-event-logs-path"        = "${local.glue_asset_bucket}/sparkHistoryLogs/"
+    "--spark-event-logs-path"        = "s3://${local.glue_asset_bucket}/sparkHistoryLogs/"
     "--enable-job-insights"          = "true"
     "--enable-observability-metrics" = "true"
     "--enable-glue-datacatalog"      = "true"
     "--job-bookmark-option"          = "job-bookmark-disable"
     "--job-language"                 = "python"
-    "--TempDir"                      = "${local.glue_asset_bucket}/temporary/"
+    "--TempDir"                      = "s3://${local.glue_asset_bucket}/temporary/"
   }
 
   execution_property {
