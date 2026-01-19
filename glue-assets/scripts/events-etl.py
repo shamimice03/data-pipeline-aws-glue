@@ -31,7 +31,7 @@ DEFAULT_DATA_QUALITY_RULESET = """
 
 # Script generated for node AWS Glue Data Catalog
 AWSGlueDataCatalog_node1768740156292 = glueContext.create_dynamic_frame.from_catalog(
-    database="test",
+    database="events_db",
     table_name="events",
     transformation_ctx="AWSGlueDataCatalog_node1768740156292",
 )
