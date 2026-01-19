@@ -127,12 +127,18 @@ The workflow completes successfully when:
 Once the pipeline completes, query the structured data using Amazon Athena:
 
 ```sql
-SELECT *
-FROM structured_events_db.structured_events
-WHERE year = '2024' 
-  AND month = '01'
-  AND day = '15'
-LIMIT 100;
+SELECT 
+    user_location,
+    product_category,
+    COUNT(*) as purchase_count,
+    AVG(purchase_amount) as avg_amount,
+    AVG(rating) as avg_rating
+FROM structured_events_db.cloudterms_events_data_outputs
+WHERE year = '2023' 
+  AND month = '11'
+  AND product_category = 'Electronics'
+GROUP BY user_location, product_category
+ORDER BY purchase_count DESC;
 ```
 
 ### Manual Execution
@@ -208,4 +214,3 @@ For issues or questions:
 
 **Last Updated**: January 2026  
 **Pipeline Version**: 1.0  
-**Owner**: Data Engineering Team
